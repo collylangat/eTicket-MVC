@@ -12,14 +12,14 @@ namespace eTicket.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Desciption { get; set; }
-        public decimal Price { get; set; }
+        public double Price { get; set; }
         public string ImageURL { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public MovieCategory MovieCategory { get; set; }
 
         //relationship
-        public List<Actor_Movie> Actors_Movies { get; set; }
+        public List<Actor_Movie> Actor_Movies { get; set; }
 
         //cinema
         public int CinemaId { get; set; }
